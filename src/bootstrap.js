@@ -9,6 +9,7 @@ const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 import "./style/main.scss";
 
+import Layout from './components/layout';
 import About from '/components/about';
 import Signin from './components/auth/signin';
 import Signup from './components/auth/signup';
