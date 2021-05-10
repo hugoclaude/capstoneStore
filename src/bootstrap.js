@@ -7,10 +7,10 @@ import reducers from "./reducers";
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
-import "./style/main.scss";
+import './actions./style/main.scss'./actions;
 
 import Layout from './components/layout';
-import About from '/components/about';
+// import About from '/components/about';
 import Signin from './components/auth/signin';
 import Signup from './components/auth/signup';
 import Account from './components/account/account';
