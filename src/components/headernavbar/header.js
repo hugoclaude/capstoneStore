@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-import history from '../../histoy';
+import History from '../../history';
 
 class Header extends Component {
   render() {
@@ -12,7 +12,7 @@ class Header extends Component {
           {
             this.props.headerlinks.map((link, index) => {
               return (
-                <a className='header__link' key={index} onClick={() => history.push(link.path)}>
+                <a className='header__link' key={index} onClick={() => History.push(link.path)}>
                   {link.title}
                 </a>
               )

@@ -7,7 +7,9 @@ import reducers from "./reducers";
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
-import './actions./style/main.scss'./actions;
+import './style/main.scss';
+
+import history from './history';
 
 import Layout from './components/layout';
 // import About from '/components/about';
@@ -15,7 +17,7 @@ import Signin from './components/auth/signin';
 import Signup from './components/auth/signup';
 import Account from './components/account/account';
 import Shop from './components/shop/shop';
-import Review from './components/order/review';
+// import Review from './components/order/review';
 import Shipping from './components/information/shipping';
 import Payment from './components/information/payment';
 
@@ -25,7 +27,8 @@ function main() {
         <Router history={history}>
             <Layout>
                 <Switch>
-                    <Route path='/' exact component={About}/>
+                      //change default index to about once created
+                    <Route path='/' exact component={Signin}/>
                     <Route path='/signin' exact component={Signin}/>
                     <Route path='/signup' exact component={Signup}/>
 

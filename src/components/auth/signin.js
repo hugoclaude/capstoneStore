@@ -21,8 +21,8 @@ class SignIn extends Component {
   render() {
     return (
       <div className="sign-in">
-        <pageTitle className='sign-in__page-title' title='Login' />
-        <signInForm onSubmit={this.onSubmit} className='sign-in__form' />
+        <PageTitle className='sign-in__page-title' title='Login' />
+        <SignInForm onSubmit={this.onSubmit} className='sign-in__form' />
       </div>
     );
   }
