@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import SignInForm from './signinForm';
-import PageTitle from './pageTitle';
+import PageTitle from '../pageTitle';
 
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
