@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import { reduxForm, Field } from "redux-form";
+import { reduxForm, Field } from 'redux-form';
 
-import { FormInput, FormButton } from "../formFields";
-import Details from "../details";
+import { FormInput, FormButton } from '../formFields';
+import Details from '../details';
 
-import History from "../../history";
+import History from '../../history';
 
 class SignInForm extends Component {
     render() {
@@ -13,18 +13,18 @@ class SignInForm extends Component {
         const links = [
             {
                 _id: 0,
-                title: "Not Registered? Create account here.",
-                onClick: () => History.push("/signup"),
+                title: 'Not Registered? Create account here.',
+                onClick: () => History.push('/signup'),
             },
             {
                 _id: 1,
-                title: "Forgot account email?",
-                onClick: () => console.log("forgot email"),
+                title: 'Forgot account email?',
+                onClick: () => console.log('forgot email'),
             },
             {
                 _id: 2,
-                title: "Forgot password?",
-                onClick: () => console.log("forgot password"),
+                title: 'Forgot password?',
+                onClick: () => console.log('forgot password'),
             },
         ];
         return (
@@ -33,33 +33,33 @@ class SignInForm extends Component {
                 className={`${className} sign-in-form`}
             >
                 <Field
-                    className="sign-in-form__email"
-                    name="email"
-                    type="email"
-                    title="Email"
-                    placeholder="Email"
+                    className='sign-in-form__email'
+                    name='email'
+                    type='email'
+                    title='Email'
+                    placeholder='Email'
                     component={FormInput}
                 />
                 <Field
-                    className="sign-in-form__password"
-                    name="password"
-                    type="password"
-                    title="Password"
-                    placeholder="Password"
+                    className='sign-in-form__password'
+                    name='password'
+                    type='password'
+                    title='Password'
+                    placeholder='Password'
                     component={FormInput}
                 />
-                <div className="sign-in-form__line"></div>
+                <div className='sign-in-form__line'></div>
                 <Field
-                    className="sign-in-form__login"
-                    type="submit"
-                    name="login"
-                    type="login"
-                    title="login"
+                    className='sign-in-form__login'
+                    type='submit'
+                    name='login'
+                    type='login'
+                    title='login'
                     component={FormButton}
                 />
                 <Details
-                    className="sign-in-form__details"
-                    title="QuickLinks"
+                    className='sign-in-form__details'
+                    title='QuickLinks'
                     links={links}
                 />
             </form>
@@ -68,7 +68,7 @@ class SignInForm extends Component {
 }
 
 SignInForm = reduxForm({
-    form: "SignInForm",
+    form: 'SignInForm',
 })(SignInForm);
 
 export default SignInForm;

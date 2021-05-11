@@ -60,7 +60,7 @@ class SignUpForm extends Component {
                     name='login'
                     component={FormButton}/>
                 <Field className='sign-up-form__back'
-                    onClick{() => history.push('/signin')}
+                    onClick={() => history.push('/signin')}
                     type='button'
                     title='Back'
                     name='back'
@@ -70,7 +70,7 @@ class SignUpForm extends Component {
             </form>
         )
     }
-}
+} 
 
 SignUpForm = reduxForm({
     form: 'SignUpForm'
