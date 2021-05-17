@@ -1,6 +1,6 @@
 .layout {
     display: grid;
 
-    grid-template-columns: [header-s] 50px [header-s nvabar-s] 50px [navbar-s content-s] 1fr [content-e];
+    grid-template-rows: [header-s] 50px [header-e nvabar-s] 50px [navbar-e content-s] 1fr [content-e];
     grid-template-columns: minmax(20px, 250px) [s] 1fr [e] minmax(20px, 250px);
 }
