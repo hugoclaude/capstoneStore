@@ -5,6 +5,7 @@ import { reduxForm, Field } from 'redux-form';
 import { FormInput, FormButton } from '../formFields';
 import Details from '../details';
 
+
 import History from '../../history';
 
 class SignInForm extends Component {
@@ -25,7 +26,7 @@ class SignInForm extends Component {
                 _id: 2,
                 title: 'Forgot password?',
                 onClick: () => console.log('forgot password'),
-            },
+            }
         ];
         return (
             <form

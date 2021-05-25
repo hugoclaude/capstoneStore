@@ -8,7 +8,7 @@
     grid-template-columns: [img-s] 1fr [img-e links-s] 1fr [links-e];
 
     &__img {
-        transform: translateX(356px);
+        transform: translateX(285px);
         grid-column: img-s/img-e;
         grid-row: 1/-1;
     }
@@ -16,20 +16,21 @@
     &__links {
         grid-column: links-s/links-e;
         grid-row: 1/-1;
-
+        
         display: grid;
         grid-template-rows: [s] 1fr [e];
         grid-column-gap: 47px;
 
         color: #333;
         font-size: 16px;
-
+    
         & > * {
             grid-row: s/e;
         }
 
         margin-right: 47px;
     }
+
 }
 
 .green-text {
@@ -56,4 +57,5 @@
     & > * {
         grid-row: s/e;
     }
+
 }

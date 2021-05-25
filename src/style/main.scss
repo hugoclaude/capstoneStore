@@ -24,7 +24,8 @@ body {
 @import 'layout';
 @import 'headernavbar';
 @import 'page-title';
-//@import 'form-fields';
+@import 'form-fields';
+@import 'details';
 
 //AUTH
 @import 'auth/signin';

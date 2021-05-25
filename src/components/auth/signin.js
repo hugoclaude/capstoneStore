@@ -7,6 +7,7 @@ import { connect } from "react-redux";
 import * as actions from "../../actions";
 
 class SignIn extends Component {
+
     componentDidMount() {
     this.props.setHeaderLinks([]);
     this.props.setNavbarLinks([]);
@@ -20,13 +21,13 @@ class SignIn extends Component {
     render() {
         return (
             <div className="sign-in">
-                Hello
                 <PageTitle className='sign-in__page-title' title='Login' />
                 <SignInForm onSubmit={this.onSubmit} className='sign-in__form' />
             </div>
         );
     }
 }
+
 SignIn = connect(null, actions)(SignIn);
 
 export default SignIn;

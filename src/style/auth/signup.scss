@@ -4,13 +4,14 @@
 
     &__form {
         display: grid;
-        grid-template-rows: [name-s] 64px [name-e email-s] 64px [email-e space-s] 35px [space-e password-s] 64px [password-e confirm-s] 64px [confirm-e] minmax(20px, 81px) [line-s] 26px [line-e buttons-s] 38px [buttons-e];
-        grid-template-columns: [back-s] 137px [back-e space-s] 40px [space-e create-s] 1fr [create-e] 1fr;
+        grid-template-rows: [name-s] 64px [name-e email-s] 64px [email-e space-s] 5px [space-e password-s] 64px [password-e confirm-s] 64px [confirm-e] minmax(20px, 81px) [line-s] 26px [line-e buttons-s] 38px [buttons-e];
+        grid-template-columns: [name-s email-s password-s confirm-s back-s] 700px [name-e email-e password-e confirm-e back-e];
         grid-row-gap: 15px;
     }
 }
 
-.sign0up-form {
+
+.sign-up-form {
     & > * {
         grid-column: 1/-1;
     }
@@ -45,5 +46,6 @@
         grid-row: 1/-1;
         justify-self: end;
         align-self: start;
+        transform: translateX(200px)
     }    
 }
