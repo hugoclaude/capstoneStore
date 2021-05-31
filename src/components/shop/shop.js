@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-import * as action from '../../actions';
+import * as actions from '../../actions';
 import ShopSearchBar from './shopSearchBar';
 import ShopProduct from './shopCart';
 import CartButton from './cartButton';
@@ -57,7 +57,7 @@ class Shop extends Component {
                     {
                         this.props.filteredProducts.map(product => {
                             return (
-                                <shopProduct {...product} key={product._id} />
+                                <ShopProduct {...product} key={product._id} />
                             )
                         })
                     }
