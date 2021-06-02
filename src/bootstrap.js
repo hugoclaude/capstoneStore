@@ -16,7 +16,7 @@ import Layout from "./components/layout";
 import Signin from "./components/auth/signin";
 import Signup from "./components/auth/signup";
 import Account from './components/account/account';
-// import Shop from './components/shop/shop';
+import Shop from './components/shop/shop';
 // import Review from './components/order/review';
 // import Shipping from './components/information/shipping';
 // import Payment from './components/information/payment';
@@ -32,7 +32,7 @@ function main() {
                         <Route path="/signin" exact component={Signin} />
                         <Route path="/signup" exact component={Signup} />
                         <Route path='/account' exact component={Account}/>
-                        {/* <Route path='/shop' exact component={Shop}/> */}
+                        <Route path='/shop' exact component={Shop}/>
                         {/* <Route path='/order/review' exact component={Review}/> */}
                         {/* <Route path='/information/shipping' exact component={Shipping}/> */}
                         {/* <Route path='/information/payment' exact component={Payment}/> */}
