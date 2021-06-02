@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import QUantity from '../quantity';
+import Quantity from '../quantity';
 import GreenPriceTag from '../greenPriceTag';
 
 import * as actions from '../../actions';
