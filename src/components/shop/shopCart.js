@@ -1,4 +1,4 @@
-import react, { Component } from 'react';
+import React, { Component } from 'react';
 import CartProduct from '../cartProduct';
 
 import { connect } from 'react-redux';
@@ -10,7 +10,7 @@ import history from '../../history';
 
 function CartContent({className, products}) {
     let count = products.length;
-    let productsJSX = products.map(product => <cartProduct {...product} key={prduct._id}/>);
+    let productsJSX = products.map(product => <CartProduct {...product} key={prduct._id}/>);
     return (
         <div className={`${className} cart-content`}>
             <div className='cart-content__title'>

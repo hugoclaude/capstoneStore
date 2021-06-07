@@ -18,7 +18,7 @@ class Shop extends Component {
     }
 
     componentDidMount() {
-        const hearderLinks = [
+        const headerLinks = [
             {
                 _id: 0,
                 title: 'Login',
@@ -64,7 +64,7 @@ class Shop extends Component {
                     }
                 </div>
                 {
-                    this.state.showCart ? <shopCart className='shop__cart'/> : ''
+                    this.state.showCart ? <ShopCart className='shop__cart'/> : ''
                 }
 
                 <CartButton onClick={this.handleAddToCart} className='shop__cart-button' icon='fas fa-cart-plus'/>
