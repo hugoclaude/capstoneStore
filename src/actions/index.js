@@ -5,12 +5,34 @@ import {
 } from './headernavbar';
 
 import {
-    fetchUserPurchses,
+    fetchUserPurchases,
     setPurchaseDetail,
+    fetchCartProducts,
+    addCartProduct,
+    signIn
 } from './user';
+
+import {
+    fetchShopCategories,
+    fetchShopProducts,
+    filterProductsWithCategoryId,
+    filterProductsWithQuery
+} from  './shop';
 
 export {
   setHeaderLinks,
   setNavbarLinks,
   changeNavbarActive,
-}
+
+  fetchUserPurchases,
+  fetchShopProducts,
+  filterProductsWith,
+  addCartProduct,
+  signIn,
+
+  fetchShopCategories,
+  fetchShopProducts,
+  filterProductsWithCategoryId,
+
+  filterProductsWithQuery
+};
