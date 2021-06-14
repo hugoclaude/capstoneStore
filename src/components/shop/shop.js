@@ -17,7 +17,7 @@ class Shop extends Component {
         }
     }
 
-    componentDidMount() {
+     componentDidMount() {
         const headerLinks = [
             {
                 _id: 0,
