@@ -1,7 +1,7 @@
 import {
-  setHeaderLinks,
-  setNavbarLinks,
-  changeNavbarActive
+    setHeaderLinks,
+    setNavbarLinks,
+    changeNavbarActive
 } from './headernavbar';
 
 import {
@@ -17,22 +17,22 @@ import {
     fetchShopProducts,
     filterProductsWithCategoryId,
     filterProductsWithQuery
-} from  './shop';
+}from './shop';
 
 export {
-  setHeaderLinks,
-  setNavbarLinks,
-  changeNavbarActive,
+    setHeaderLinks,
+    setNavbarLinks,
+    changeNavbarActive,
 
-  fetchUserPurchases,
-  fetchShopProducts,
-  filterProductsWith,
-  addCartProduct,
-  signIn,
+    fetchUserPurchases,
+    setPurchaseDetail,
+    fetchCartProducts,
+    addCartProduct,
+    signIn,
 
-  fetchShopCategories,
-  fetchShopProducts,
-  filterProductsWithCategoryId,
+    fetchShopCategories,
+    fetchShopProducts,
+    filterProductsWithCategoryId,
 
-  filterProductsWithQuery
+    filterProductsWithQuery
 };
