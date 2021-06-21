@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-function PurchaseDetailLabel({className, title, value}) {
-    retrun (
+function PurchaseDetailLabel ({className, title, value}) {
+    return (
         <div className={`${className} purchase-detail-label`}>
             <div className='purchase-detail-label__title'>{title}</div>
-            <div className='purchase-details-label__value'>{value}</div>
+            <div className='purchase-detail-label__value'>{value}</div>
         </div>
     )
 }
 
 class PurchaseDetail extends Component {
     render() {
-        const { className, orderNumber, orderDate, user, tool, creditCart } = this.props;
+        const { className, orderNumber, orderDate, user, total, creditCard } = this.props;
         const { name, shippingAddress } = user;
         const nameAddress = `${name} ${shippingAddress}`
         return (
@@ -49,6 +49,6 @@ function mapStateToProps(state) {
     return { ...purchaseDetail }
 }
 
-PurchaseDetail = connect(mapStateToProps)(purchaseDetail);
+PurchaseDetail = connect(mapStateToProps)(PurchaseDetail);
 
 export default PurchaseDetail;

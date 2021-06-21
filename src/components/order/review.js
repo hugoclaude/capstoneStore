@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-import { Fields } from 'redux-form';
 import * as actions from '../../actions';
 
 import PageTitle from '../pageTitle';
-import ReviewForm from '../reviewForm';
+import ReviewForm from './reviewForm';
 
 class Review extends Component {
 
